@@ -1,0 +1,31 @@
+// @import "bootstrap/bootstrap.scss";
+@import "bs.scss"; 
+@import "icomoon.css";
+@import "extends.scss";
+
+.pageheader{
+      padding: 2rem .9375rem;
+    margin-bottom: 1.5rem;
+    color: #cdbfe3;
+    text-align: center;
+    // background-color: #563d7c;
+    background-color: #7C3D55;
+}
+
+@media (min-width: 544px){
+  .bd-pageheader {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      margin-bottom: 3rem;
+      text-align: left;
+  }
+}
+
+header .navbar{
+  border-radius: 0px;
+}
+
+.col-md-6 img{
+max-width: 100%;
+
+}

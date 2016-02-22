@@ -1,0 +1,14 @@
+// .validate-email{
+//   @extend .form-control;
+// }
+
+.element-invisible{
+  @extend .sr-only;
+}
+
+// .validate-username, .validate-password{
+//   @extend .form-control, .form-control-sm;
+// }
+input[type="text"],input[type="email"],input[type="password"],input[type="search"]{
+  @extend .form-control;
+}
