@@ -7417,14 +7417,14 @@ a.text-danger:focus, a.text-danger:hover {
   background-image: url("../img/pageheader_bg.jpg");
   background-attachment: fixed;
 }
-/* line 15, ../sass/template.scss */
+/* line 14, ../sass/template.scss */
 .pageheader .container {
   padding: 2rem .9375rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 544px) {
-  /* line 23, ../sass/template.scss */
+  /* line 22, ../sass/template.scss */
   .bd-pageheader {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -7432,17 +7432,34 @@ a.text-danger:focus, a.text-danger:hover {
     text-align: left;
   }
 }
-/* line 31, ../sass/template.scss */
+/* line 30, ../sass/template.scss */
 header .navbar {
   border-radius: 0px;
 }
 
-/* line 35, ../sass/template.scss */
+/* line 34, ../sass/template.scss */
 .col-md-6 img {
   max-width: 100%;
 }
 
-/* line 39, ../sass/template.scss */
+/* line 38, ../sass/template.scss */
+h1.white-lined, h2.white-lined, h3.white-lined, h4.white-lined, h5.white-lined {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  background: url(../img/white-line.png) center repeat-x;
+}
+/* line 47, ../sass/template.scss */
+h1.white-lined > span, h2.white-lined > span, h3.white-lined > span, h4.white-lined > span, h5.white-lined > span {
+  border-width: 0 34px;
+  height: 32px;
+  display: inline-block;
+  line-height: 35px;
+  background-color: #002B36;
+  padding: 0 10px;
+}
+
+/* line 58, ../sass/template.scss */
 .top-pre-first, .top-first, .top-pre-second, .top-second, .top-pre-third, .top-third {
   margin: 0;
   padding-top: 1.5em;
@@ -7450,62 +7467,62 @@ header .navbar {
   color: #839496;
 }
 
-/* line 46, ../sass/template.scss */
+/* line 65, ../sass/template.scss */
 .top-pre-first {
   background-color: #002B36;
 }
 
-/* line 50, ../sass/template.scss */
+/* line 69, ../sass/template.scss */
 .top-first {
   background-color: #073642;
 }
-/* line 53, ../sass/template.scss */
+/* line 72, ../sass/template.scss */
 .top-first [class*="col-"]:hover {
   background-color: #184049;
 }
-/* line 56, ../sass/template.scss */
+/* line 75, ../sass/template.scss */
 .top-first h3 {
   color: #fff;
 }
 
-/* line 60, ../sass/template.scss */
+/* line 79, ../sass/template.scss */
 .top-pre-second {
   background-color: #174753;
 }
 
-/* line 63, ../sass/template.scss */
+/* line 82, ../sass/template.scss */
 .top-second {
   background-color: #72D0EB;
   color: #fff;
 }
-/* line 66, ../sass/template.scss */
+/* line 85, ../sass/template.scss */
 .top-second [class*="col-"]:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* line 69, ../sass/template.scss */
+/* line 88, ../sass/template.scss */
 .top-second h3 {
   color: #1A4C59;
 }
 
-/* line 82, ../sass/template.scss */
+/* line 101, ../sass/template.scss */
 .top-third {
   background-color: #252831;
 }
-/* line 84, ../sass/template.scss */
+/* line 103, ../sass/template.scss */
 .top-third [class*="col-"]:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 87, ../sass/template.scss */
+/* line 106, ../sass/template.scss */
 .top-third h3 {
   color: #fff;
 }
 
-/* line 92, ../sass/template.scss */
+/* line 111, ../sass/template.scss */
 footer {
   background-color: #002B36;
-  height: 400px;
+  min-height: 50px;
 }
-/* line 95, ../sass/template.scss */
+/* line 114, ../sass/template.scss */
 footer h2 {
   font-family: "museo-slab",serif;
   font-size: 20px;
@@ -7516,7 +7533,7 @@ footer h2 {
   margin-bottom: 10px;
   background: url(../img/white-line.png) center repeat-x;
 }
-/* line 104, ../sass/template.scss */
+/* line 123, ../sass/template.scss */
 footer h2 span {
   border-width: 0 34px;
   height: 32px;
@@ -7524,4 +7541,26 @@ footer h2 span {
   line-height: 35px;
   background-color: #002B36;
   padding: 0 10px;
+}
+
+/* line 136, ../sass/template.scss */
+.learn-more-btn {
+  padding: 0 18px;
+  background: #859900;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font: 700 14px/28px 'proxima-nova',sans-serif;
+  display: inline-block;
+  color: #fff !important;
+  cursor: pointer;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  text-shadow: none;
+  border-bottom: none !important;
+}
+
+/* line 152, ../sass/template.scss */
+.search input {
+  border-radius: 0px;
 }
