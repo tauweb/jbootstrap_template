@@ -82,8 +82,9 @@ include 'includes/variables.php';
 			</div>
 		</div>
 	</div>
+	<?php  include_once "tmpls/footer.php";?>
 	<!-- Footer -->
-	<footer class="footer" role="contentinfo">
+<!-- 	<footer class="footer" role="contentinfo">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
 			<hr />
 			<jdoc:include type="modules" name="footer" style="none" />
@@ -97,7 +98,7 @@ include 'includes/variables.php';
 				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
 			</p>
 		</div>
-	</footer>
+	</footer> -->
 	<jdoc:include type="modules" name="debug" style="none" />
 </body>
 </html>

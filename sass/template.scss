@@ -4,13 +4,20 @@
 @import "extends.scss";
 
 .pageheader{
-  padding: 2rem .9375rem;
+  // padding: 2rem .9375rem;
   // margin-bottom: 1.5rem;
   color: #cdbfe3;
   text-align: center;
   // background-color: #563d7c;
   background-color: #7C3D55;
+  background-image: url("../img/pageheader_bg.jpg");
+  background-attachment: fixed;
+  .container{
+    padding: 2rem .9375rem;
+    background-color: rgba(#000, .5);
+  }
 }
+
 
 @media (min-width: 544px){
   .bd-pageheader {
@@ -64,6 +71,14 @@ header .navbar{
   }
 }
 
+.top-pre-third{
+  // background-image: url("../img/top-pre-third.png");
+  // background-repeat: fixed;
+  // [class*="col-"]{
+  //   background-color: rgba(#000, .6)
+  // }
+}
+
 .top-third{
   background-color: #252831;
   [class*="col-"]:hover{
@@ -72,4 +87,27 @@ header .navbar{
   h3{
     color: #fff;
   }
+}
+
+footer{
+  background-color: #002B36;
+  height: 400px;
+  h2 {
+    font-family: "museo-slab",serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    background: url(../img/white-line.png) center repeat-x;
+    span{
+          border-width: 0 34px;
+    height: 32px;
+    display: inline-block;
+    line-height: 35px;
+    background-color: #002B36;
+    padding: 0 10px;
+    }
+}
 }
