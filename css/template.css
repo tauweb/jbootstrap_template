@@ -7437,32 +7437,59 @@ header .navbar {
 }
 
 /* line 32, ../sass/template.scss */
-.top-pre-first {
-  background-color: #002B36;
-}
-
-/* line 36, ../sass/template.scss */
-.top-first {
-  background-color: #073642;
-}
-/* line 39, ../sass/template.scss */
-.top-first [class*="col-"]:hover {
-  background-color: #184049;
-}
-/* line 42, ../sass/template.scss */
-.top-first h3 {
-  color: #fff;
-}
-
-/* line 46, ../sass/template.scss */
-.top-pre-second {
-  background-color: #174753;
-}
-
-/* line 50, ../sass/template.scss */
 .top-pre-first, .top-first, .top-pre-second, .top-second, .top-pre-third, .top-third {
   margin: 0;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   color: #839496;
+}
+
+/* line 39, ../sass/template.scss */
+.top-pre-first {
+  background-color: #002B36;
+}
+
+/* line 43, ../sass/template.scss */
+.top-first {
+  background-color: #073642;
+}
+/* line 46, ../sass/template.scss */
+.top-first [class*="col-"]:hover {
+  background-color: #184049;
+}
+/* line 49, ../sass/template.scss */
+.top-first h3 {
+  color: #fff;
+}
+
+/* line 53, ../sass/template.scss */
+.top-pre-second {
+  background-color: #174753;
+}
+
+/* line 56, ../sass/template.scss */
+.top-second {
+  background-color: #72D0EB;
+  color: #fff;
+}
+/* line 59, ../sass/template.scss */
+.top-second [class*="col-"]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 62, ../sass/template.scss */
+.top-second h3 {
+  color: #1A4C59;
+}
+
+/* line 67, ../sass/template.scss */
+.top-third {
+  background-color: #252831;
+}
+/* line 69, ../sass/template.scss */
+.top-third [class*="col-"]:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 72, ../sass/template.scss */
+.top-third h3 {
+  color: #fff;
 }

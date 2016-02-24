@@ -29,6 +29,13 @@ header .navbar{
   max-width: 100%;
 }
 
+.top-pre-first, .top-first, .top-pre-second, .top-second, .top-pre-third, .top-third{
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #839496;
+}
+
 .top-pre-first{
   background-color: #002B36;
 }
@@ -46,10 +53,23 @@ header .navbar{
 .top-pre-second{
   background-color: #174753;
 }
+.top-second{
+  background-color: #72D0EB;
+  color: #fff;
+  [class*="col-"]:hover{
+    background-color: rgba(#000, .1);
+  }
+  h3{
+    color: #1A4C59;
+  }
+}
 
-.top-pre-first, .top-first, .top-pre-second, .top-second, .top-pre-third, .top-third{
-  margin: 0;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  color: #839496;
+.top-third{
+  background-color: #252831;
+  [class*="col-"]:hover{
+    background-color: rgba(#000, .3);
+  }
+  h3{
+    color: #fff;
+  }
 }
