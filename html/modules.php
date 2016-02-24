@@ -55,3 +55,28 @@ function modChrome_well($module, &$params, &$attribs)
 		echo '</' . $moduleTag . '>';
 	}
 }
+
+/*
+ * ищщеыекфз (divs and font header tags)
+ * With the new advanced parameter it does the same as the html5 chrome and Twitter Bootstrap 4
+ */
+function modChrome_bootstrap($module, &$params, &$attribs)
+{
+  $moduleTag      = $params->get('module_tag', 'div');
+  $headerTag      = htmlspecialchars($params->get('header_tag', 'h3'));
+  $bootstrapSize  = (int) $params->get('bootstrap_size', 0);
+  $moduleClass    = $bootstrapSize != 0 ? ' col-md-' . $bootstrapSize : '';
+
+  // Temporarily store header class in variable
+  $headerClass    = $params->get('header_class');
+  $headerClass    = ($headerClass) ? ' class="' . htmlspecialchars($headerClass) . '"' : '';
+
+  if (!empty ($module->content)) : ?>
+    <<?php echo $moduleTag; ?> class="moduletable<?php echo htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass; ?>">
+      <?php if ((bool) $module->showtitle) : ?>
+        <<?php echo $headerTag . $headerClass . '>' . $module->title; ?></<?php echo $headerTag; ?>>
+      <?php endif; ?>
+      <?php echo $module->content; ?>
+    </<?php echo $moduleTag; ?>>
+  <?php endif;
+}
