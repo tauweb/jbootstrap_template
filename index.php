@@ -33,7 +33,7 @@ include 'includes/variables.php';
 	<?php include 'tmpls/header.php'; ?>
   <!-- End Header -->
 
-		<div class="<?=$classContainer;?>">
+	
 			<?php if ($this->countModules('_position-1')) : ?>
 				<nav class="navigation" role="navigation">
 					<div class="navbar pull-left">
@@ -52,8 +52,8 @@ include 'includes/variables.php';
 			<jdoc:include type="modules" name="banner" style="xhtml" />
 
 			<!-- Include the top positions -->
-			<?php include 'tmpls/top-colums.php'; ?>
-
+			<?php include 'tmpls/top-columns.php'; ?>
+	<div class="<?=$classContainer;?>">
 			<div class="row-fluid">
 				<?php if ($this->countModules('position-8')) : ?>
 					<!-- Begin Sidebar -->

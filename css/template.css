@@ -7412,7 +7412,6 @@ a.text-danger:focus, a.text-danger:hover {
 /* line 6, ../sass/template.scss */
 .pageheader {
   padding: 2rem .9375rem;
-  margin-bottom: 1.5rem;
   color: #cdbfe3;
   text-align: center;
   background-color: #7C3D55;
@@ -7435,4 +7434,31 @@ header .navbar {
 /* line 28, ../sass/template.scss */
 .col-md-6 img {
   max-width: 100%;
+}
+
+/* line 32, ../sass/template.scss */
+.top-pre-first {
+  background-color: #002B36;
+  color: #839496;
+}
+
+/* line 37, ../sass/template.scss */
+.top-first {
+  background-color: #073642;
+  color: #839496;
+}
+/* line 41, ../sass/template.scss */
+.top-first [class*="col-"]:hover {
+  background-color: #184049;
+}
+/* line 44, ../sass/template.scss */
+.top-first h3 {
+  color: #fff;
+}
+
+/* line 49, ../sass/template.scss */
+.top-pre-first, .top-first {
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }

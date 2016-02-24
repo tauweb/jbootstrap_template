@@ -4,20 +4,20 @@
 @import "extends.scss";
 
 .pageheader{
-      padding: 2rem .9375rem;
-    margin-bottom: 1.5rem;
-    color: #cdbfe3;
-    text-align: center;
-    // background-color: #563d7c;
-    background-color: #7C3D55;
+  padding: 2rem .9375rem;
+  // margin-bottom: 1.5rem;
+  color: #cdbfe3;
+  text-align: center;
+  // background-color: #563d7c;
+  background-color: #7C3D55;
 }
 
 @media (min-width: 544px){
   .bd-pageheader {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-      margin-bottom: 3rem;
-      text-align: left;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    text-align: left;
   }
 }
 
@@ -26,6 +26,29 @@ header .navbar{
 }
 
 .col-md-6 img{
-max-width: 100%;
-
+  max-width: 100%;
 }
+
+.top-pre-first{
+  background-color: #002B36;
+  color: #839496;
+}
+
+.top-first
+{
+  background-color: #073642;
+  color: #839496;
+  [class*="col-"]:hover{
+    background-color: #184049;
+  }
+  h3{
+    color: #fff;
+  }
+}
+
+.top-pre-first, .top-first{
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
