@@ -1,0 +1,30 @@
+.pageheader{
+  // padding: 2rem .9375rem;
+  // margin-bottom: 1.5rem;
+  color: #cdbfe3;
+  text-align: center;
+  background-color: #7C3D55;
+  background-image: url("../img/pageheader_bg.jpg");
+  background-attachment: fixed;
+  .container{
+    padding: 2rem .9375rem;
+    background-color: rgba(#000, .5);
+  }
+}
+
+@media (min-width: 544px){
+  .bd-pageheader {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+}
+
+header .navbar{
+  border-radius: 0px;
+}
+
+.search input{
+  border-radius: 0px;
+}

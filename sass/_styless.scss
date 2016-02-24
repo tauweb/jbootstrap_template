@@ -1,0 +1,37 @@
+// Lined header
+h1.white-lined,h2.white-lined,h3.white-lined,h4.white-lined,h5.white-lined{
+  // font-family: "museo-slab",serif;
+  // font-size: 20px;
+  color: #fff;
+  // font-weight: normal;
+  // font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+  background: url(../img/white-line.png) center repeat-x;
+  >span{
+    border-width: 0 34px;
+    height: 32px;
+    display: inline-block;
+    line-height: 35px;
+    background-color: #002B36;
+    padding: 0 10px;
+  }
+  
+}
+
+// Readmore button
+.learn-more-btn {
+  padding: 0 18px;
+  background: #859900;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none!important;
+  font: 700 14px/28px 'proxima-nova',sans-serif;
+  display: inline-block;
+  color: #fff!important;
+  cursor: pointer;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  text-shadow: none;
+  border-bottom: none!important;
+}

@@ -1,35 +1,14 @@
 // @import "bootstrap/bootstrap.scss";
+// Basic=========================
 @import "bs.scss"; 
 @import "icomoon.css";
 @import "extends.scss";
 
-.pageheader{
-  // padding: 2rem .9375rem;
-  // margin-bottom: 1.5rem;
-  color: #cdbfe3;
-  text-align: center;
-  background-color: #7C3D55;
-  background-image: url("../img/pageheader_bg.jpg");
-  background-attachment: fixed;
-  .container{
-    padding: 2rem .9375rem;
-    background-color: rgba(#000, .5);
-  }
-}
-
-
-@media (min-width: 544px){
-  .bd-pageheader {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 3rem;
-    text-align: left;
-  }
-}
-
-header .navbar{
-  border-radius: 0px;
-}
+// Template includes
+@import "header.scss";
+@import "top-columns.scss";
+@import "footer.scss";
+@import "_styless.scss";
 
 .col-md-6 img{
   max-width: 100%;
@@ -55,84 +34,6 @@ h1.white-lined,h2.white-lined,h3.white-lined,h4.white-lined,h5.white-lined{
   
 }
 
-.top-pre-first, .top-first, .top-pre-second, .top-second, .top-pre-third, .top-third{
-  margin: 0;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  color: #839496;
-}
-
-.top-pre-first{
-  background-color: #002B36;
-}
-
-.top-first
-{
-  background-color: #073642;
-  [class*="col-"]:hover{
-    background-color: #184049;
-  }
-  h3{
-    color: #fff;
-  }
-}
-.top-pre-second{
-  background-color: #174753;
-}
-.top-second{
-  background-color: #72D0EB;
-  color: #fff;
-  [class*="col-"]:hover{
-    background-color: rgba(#000, .1);
-  }
-  h3{
-    color: #1A4C59;
-  }
-}
-
-.top-pre-third{
-  // background-image: url("../img/top-pre-third.png");
-  // background-repeat: fixed;
-  // [class*="col-"]{
-  //   background-color: rgba(#000, .6)
-  // }
-}
-
-.top-third{
-  background-color: #252831;
-  [class*="col-"]:hover{
-    background-color: rgba(#000, .3);
-  }
-  h3{
-    color: #fff;
-  }
-}
-
-footer{
-  background-color: #002B36;
-  min-height: 50px;
-  h2 {
-    font-family: "museo-slab",serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 10px;
-    background: url(../img/white-line.png) center repeat-x;
-    span{
-      border-width: 0 34px;
-      height: 32px;
-      display: inline-block;
-      line-height: 35px;
-      background-color: #002B36;
-      padding: 0 10px;
-    }
-  }
-}
-
-
-
 .learn-more-btn {
     padding: 0 18px;
     background: #859900;
@@ -147,8 +48,4 @@ footer{
     -webkit-transition: all .3s ease-in-out;
     text-shadow: none;
     border-bottom: none!important;
-}
-
-.search input{
-  border-radius: 0px;
 }
