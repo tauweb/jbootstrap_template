@@ -16,22 +16,13 @@ h1.white-lined,h2.white-lined,h3.white-lined,h4.white-lined,h5.white-lined{
     background-color: #002B36;
     padding: 0 10px;
   }
-  
 }
 
-// Readmore button
-.learn-more-btn {
-  padding: 0 18px;
-  background: #859900;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none!important;
-  font: 700 14px/28px 'proxima-nova',sans-serif;
-  display: inline-block;
-  color: #fff!important;
-  cursor: pointer;
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  text-shadow: none;
-  border-bottom: none!important;
+// Временные стили для подменю
+ul.nav ul li>a {
+    display: block;
+      margin-left: .25rem;
+    // padding: .25rem .75rem;
+    // font-size: 90%;
+    color: #99979c;
 }

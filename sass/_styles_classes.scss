@@ -1,0 +1,16 @@
+// Класс кнопки подробнее
+.learn-more-btn {
+    padding: 0 18px;
+    background: #859900;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    font: 700 14px/28px 'proxima-nova',sans-serif;
+    display: inline-block;
+    color: #fff!important;
+    cursor: pointer;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    text-shadow: none;
+    border-bottom: none!important;
+}

@@ -96,7 +96,7 @@
 	$this->countModules('top-second-right') ) : ?>
 <div class="row top-second">
 	<div class="<?=$classContainer;?>">
-		<?php // Top 3 small or 2 middle ============================================================== ?>
+		<?php // Top 3 small or 2 middle ============================================================ ?>
 		<?php // Left column ?>
 		<?php if ( $this->countModules('top-second-left') and 
 			$this->countModules('top-second-center') and 

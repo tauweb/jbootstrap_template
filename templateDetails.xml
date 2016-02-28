@@ -61,8 +61,8 @@
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_jbootstrap_template.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_jbootstrap_template.sys.ini</language>
-		<language tag="ru-RU">en-GB/ru-RU.tpl_jbootstrap_template.ini</language>
-		<language tag="ru-RU">en-GB/ru-RU.tpl_jbootstrap_template.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_jbootstrap_template.ini</language>
+		<language tag="ru-RU">ru-Ru/ru-RU.tpl_jbootstrap_template.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">

@@ -7543,7 +7543,14 @@ h1.white-lined > span, h2.white-lined > span, h3.white-lined > span, h4.white-li
   padding: 0 10px;
 }
 
-/* line 23, ../sass/_styless.scss */
+/* line 22, ../sass/_styless.scss */
+ul.nav ul li > a {
+  display: block;
+  margin-left: .25rem;
+  color: #99979c;
+}
+
+/* line 2, ../sass/_styles_classes.scss */
 .learn-more-btn {
   padding: 0 18px;
   background: #859900;
@@ -7560,41 +7567,7 @@ h1.white-lined > span, h2.white-lined > span, h3.white-lined > span, h4.white-li
   border-bottom: none !important;
 }
 
-/* line 13, ../sass/template.scss */
+/* line 14, ../sass/template.scss */
 .col-md-6 img {
   max-width: 100%;
-}
-
-/* line 17, ../sass/template.scss */
-h1.white-lined, h2.white-lined, h3.white-lined, h4.white-lined, h5.white-lined {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 10px;
-  background: url(../img/white-line.png) center repeat-x;
-}
-/* line 26, ../sass/template.scss */
-h1.white-lined > span, h2.white-lined > span, h3.white-lined > span, h4.white-lined > span, h5.white-lined > span {
-  border-width: 0 34px;
-  height: 32px;
-  display: inline-block;
-  line-height: 35px;
-  background-color: #002B36;
-  padding: 0 10px;
-}
-
-/* line 37, ../sass/template.scss */
-.learn-more-btn {
-  padding: 0 18px;
-  background: #859900;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  font: 700 14px/28px 'proxima-nova',sans-serif;
-  display: inline-block;
-  color: #fff !important;
-  cursor: pointer;
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  text-shadow: none;
-  border-bottom: none !important;
 }
