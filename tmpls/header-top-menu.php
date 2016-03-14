@@ -1,14 +1,13 @@
 <!-- Header-Top -->
-<div class="header-top collapse navbar-toggleable-xs">
-  <nav class="navbar navbar-dark bg-inverse">
-    <!-- Container --> 
+<div class="header-top  navbar-toggleable-xs">
+  <!-- <nav class="navbar navbar-dark bg-inverse"> -->
     <div class="<?php echo $classContainer; ?>">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <?php if ($this->countModules('position-1')) : ?>
         <jdoc:include type="modules" name="position-1" style="none" />
       <?php endif; ?>
     </div> <!-- End Container -->
-  </nav>
+  <!-- </nav> -->
 
   <!-- Login button -->
 <!--   <div class="login-menu">

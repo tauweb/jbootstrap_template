@@ -1,13 +1,12 @@
 <!-- Header -->
 <header class="header" role="banner">
-<!--  header-top-menu-->
 <?php include 'header-top-menu.php'; ?>
-<!-- End header-top-menu  -->
 <!-- <div class="<?php echo $classContainer; ?>"> -->
 <div class="header-inner clearfix">
 
 <div class="pageheader">
-  <div class="<?php echo $classContainer; ?>">
+  <?php //include 'header-top-menu.php'; ?>
+  <div class="<?php echo $classContainer; ?> pageheader-inner">
     <h1><?php echo $logo; ?></h1>
     <p class="lead">
       <?php if ($this->params->get('sitedescription')) : ?>

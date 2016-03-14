@@ -1,6 +1,6 @@
 // @import "bootstrap/bootstrap.scss";
 // Basic=========================
-@import "bs.scss"; 
+@import "bootstrap/bootstrap.scss";  
 @import "icomoon.css";
 @import "extends.scss";
 
@@ -11,6 +11,15 @@
 @import "styless.scss";
 @import "styles_classes.scss";
 
-.col-md-6 img{
+img, iframe{
   max-width: 100%;
+}
+
+.breadcrumb li{
+  float: left;
+}
+
+// Main part Content and ect.
+.content{
+  padding-top: .5rem;
 }

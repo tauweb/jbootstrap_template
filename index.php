@@ -54,7 +54,7 @@ include 'includes/variables.php';
 	<?php include 'tmpls/top-columns.php'; ?>
 
 	<!-- Mian part. Content. -->
-	<div class="<?=$classContainer;?>">
+	<div class="<?=$classContainer;?> content">
 		<div class="row-fluid">
 			<?php if ($this->countModules('position-8')) : ?>
 				<!-- Begin Sidebar -->

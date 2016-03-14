@@ -1,10 +1,7 @@
+$border:  1px solid rgba(0, 0, 0, 0.15);
 // Lined header
 h1.white-lined,h2.white-lined,h3.white-lined,h4.white-lined,h5.white-lined{
-  // font-family: "museo-slab",serif;
-  // font-size: 20px;
   color: #fff;
-  // font-weight: normal;
-  // font-style: italic;
   text-align: center;
   margin-bottom: 10px;
   background: url(../img/white-line.png) center repeat-x;
@@ -24,5 +21,73 @@ ul.nav ul li>a {
       margin-left: .25rem;
     // padding: .25rem .75rem;
     // font-size: 90%;
-    color: #99979c;
+    // color: #99979c;
+}
+
+// Dropdown menu (Article icons)
+ul.dropdown-menu{
+  li {
+    a{
+      @extend .dropdown-item;
+    }
+    span{
+      margin-right: 5px;
+    }
+  }
+}
+
+// Top  menu
+ul.navbar-nav li{
+  ul.nav-child {
+    display: none;
+    padding: 5px 0 5px 0;
+    position: absolute;
+    border: $border;
+    li {
+      padding: 0;
+      margin: 0 !important;
+      float: none !important;
+      a{
+        margin: 0 !important;
+        padding: 5px 10px;
+        background-color: #FFF;
+        &:hover{
+          background-color: #F2F1F0;
+        }
+      }
+    }
+  }
+  &:hover ul{
+    display: block;
+  }
+}
+
+// Others menu
+.nav .parent {
+  &:hover ul{
+    display: block;
+  }
+  ul{
+    display: none;
+    padding: 5px 0 5px 0;
+    position: absolute;
+    background-color: #FFF;
+    border: $border;
+    border-radius: 0 0 2px 2px;
+    li{
+      display: list-item !important;
+      a{
+        margin: 0;
+        padding: 5px 10px;
+        &:hover{
+          background-color: #F2F1F0;
+        }
+      }
+    }
+  }
+}
+
+// Отступы в боковых меню
+.moduletable, .well{
+  margin-bottom: 10px;
 }
