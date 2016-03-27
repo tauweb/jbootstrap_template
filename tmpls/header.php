@@ -13,14 +13,7 @@
         <?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
       <?php endif; ?>
     </p>
-
-    <a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
-      <?php echo $logo; ?>
-      <?php if ($this->params->get('sitedescription')) : ?>
-        <?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
-      <?php endif; ?>
-    </a>
-    <div class="header-search pull-right">
+    <div class="header-search ..lpull-right">
       <jdoc:include type="modules" name="position-0" style="none" />
     </div>
   </div>

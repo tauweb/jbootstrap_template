@@ -16,7 +16,7 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-
+  
 // Output as HTML5
 $doc->setHtml5(true);
 
@@ -31,19 +31,20 @@ else
 
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/collapse.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/util.js');
 
 // Добавление библиотек
-// Модальные окна
-JHtml::_('behavior.modal');
 
-// Тултипы
-JHtml::_('behavior.tooltip');
+JHtml::_('behavior.modal'); // Модальные окна
+
+JHtml::_('behavior.tooltip'); // Тултипы
 
 // Установка контент-генератора
 $this->setGenerator('Каждый раз когда вы заходите на сайт, тысячи миньонов пишут весь код своими маленькими ручками.');
 
-// Браузер==========================================================================================
+// Browser =========================================================================================
 // Определяем браузер и выводим сообщения вслучае говна
 $browser = JBrowser::getInstance();
 
@@ -59,7 +60,7 @@ if ($browserName !== 'chrome' and $browserName !== 'mozilla' and !$browserIsRobo
 
   $app->enqueueMessage("$browserMessage", 'Notice');
 }
-// =================================================================================================
+// End Browser =====================================================================================
 
 // Добавление JS
 // Подсветка синтаксиса
@@ -79,9 +80,11 @@ if (file_exists($userCss) && filesize($userCss) > 0)
   $doc->addStyleSheetVersion('templates/' . $this->template . '/css/user.css');
 }
 
+// File contains unsets template variables
+require_once ('unset.php');
 
 // Load optional RTL Bootstrap CSS
-JHtml::_('bootstrap.loadCss', false, $this->direction);
+// JHtml::_('bootstrap.loadCss', true, $this->direction);
 
 // Adjusting content width
 if ($this->countModules('position-7') && $this->countModules('position-8'))

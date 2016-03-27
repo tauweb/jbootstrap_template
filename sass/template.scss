@@ -1,19 +1,18 @@
-// @import "bootstrap/bootstrap.scss";
-// Basic=========================
-@import "bootstrap/bootstrap.scss";  
+// Basic =======================================================================
+@import "bootstrap/bootstrap.scss";
 @import "icomoon.css";
 @import "extends.scss";
 
-// Template includes
-@import "header.scss";
-@import "top-columns.scss";
-@import "footer.scss";
-@import "styless.scss";
-@import "styles_classes.scss";
+// Template includes ===========================================================
+// Template parts
+@import "tmpls/header.scss";
+@import "tmpls/top-columns.scss";
+@import "tmpls/footer.scss";
 
-img, iframe{
-  max-width: 100%;
-}
+// Styles ======================================================================
+@import "styless.scss";
+@import "classes.scss";
+@import "global.scss";
 
 .breadcrumb li{
   float: left;
@@ -22,4 +21,17 @@ img, iframe{
 // Main part Content and ect.
 .content{
   padding-top: .5rem;
+}
+
+#aside {
+  .well{
+    border: 1px dotted #F2F1F0;
+    >:not(h3){
+      margin: 0px 5px;
+    }
+  }
+  .page-header{
+    padding: 5px 10px;
+    background-color: #F2F1F0;
+  }
 }

@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 
 // Include the template parameters
 include 'includes/params.php';
+
 // Include template variablses
 include 'includes/variables.php';
 ?>
@@ -85,22 +86,7 @@ include 'includes/variables.php';
 	<!-- </div>  End body -->
 
 	<?php  include_once "tmpls/footer.php";?>
-	<!-- Footer -->
-<!-- 	<footer class="footer" role="contentinfo">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-			<hr />
-			<jdoc:include type="modules" name="footer" style="none" />
-			<p class="pull-right">
-				<a class="readmore" href="#top" id="back-top">
-					<?php //echo JText::_('TPL_JBOOTSTRAP_TEMPLATE_BACKTOTOP'); ?>
-					Вверх
-				</a>
-			</p>
-			<p>
-				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
-			</p>
-		</div>
-	</footer> -->
+
 	<jdoc:include type="modules" name="debug" style="none" />
 </body>
 </html>

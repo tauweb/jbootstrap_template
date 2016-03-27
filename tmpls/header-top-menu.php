@@ -1,21 +1,25 @@
 <!-- Header-Top -->
-<div class="header-top  navbar-toggleable-xs">
-  <!-- <nav class="navbar navbar-dark bg-inverse"> -->
+<div class="header-top">
+  <nav class="navbar navbar-dark bg-inverse">
+<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#topMenu">
+  &#9776;
+</button>
+<div class="collapse navbar-toggleable-xs" id="topMenu">
     <div class="<?php echo $classContainer; ?>">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <?php if ($this->countModules('position-1')) : ?>
         <jdoc:include type="modules" name="position-1" style="none" />
       <?php endif; ?>
     </div> <!-- End Container -->
-  <!-- </nav> -->
-
+  </div>
+  </nav>
   <!-- Login button -->
 <!--   <div class="login-menu">
     <a class="btn-login icon-user hasTooltip" title="" data-original-title="
       <?php
       if ($user->name) {
         echo "Привет <strong>$user->name</strong>";
-      }else{
+      }else{  
         echo "Авторизоваться";
       }?>"
         <?php if (!$user->name) {

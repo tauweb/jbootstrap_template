@@ -1,0 +1,33 @@
+// Variables
+$pageheader-min-height: 250px;
+$header-top-bgc: rgba(#000, .8);
+
+header .navbar{
+  border-radius: 0px;
+}
+
+.pageheader{
+  min-height: $pageheader-min-height;
+  color: #cdbfe3;
+  text-align: center;
+  background-color: #7C3D55;
+  background-image: url("../img/pageheader_bg.jpg");
+  background-attachment: fixed;
+}
+
+.pageheader-inner{
+  min-height: $pageheader-min-height;
+  padding: 2rem .9375rem;
+  background-color: rgba(#000, .5);
+}
+
+// Search
+#mod-search-searchword{
+  border-radius: 0px;
+  background-color: rgba(#000, .5);
+  border-color: rgba(#4E4C45, .7);
+  &:focus{
+    background-color: rgba(#000, .7);
+    border-color: rgba(#000, .6);
+  }
+}
