@@ -21,7 +21,7 @@ header .navbar{
   background-color: rgba(#000, .5);
 }
 
-// Search
+// Search ======================================================================
 #mod-search-searchword{
   border-radius: 0px;
   background-color: rgba(#000, .5);
@@ -29,5 +29,11 @@ header .navbar{
   &:focus{
     background-color: rgba(#000, .7);
     border-color: rgba(#000, .6);
+  }
+}
+
+.search{
+  input{
+    margin: auto;
   }
 }

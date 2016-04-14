@@ -57,6 +57,7 @@
 		<position>top-third-3</position>
 		<position>top-third-4</position>
 		<position>footer</position>
+		<position></position>
 	</positions>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_jbootstrap_template.ini</language>
@@ -78,7 +79,7 @@
 				<field name="logoFile" class="" type="media" default=""
 					label="TPL_JBOOTSTRAP_TEMPLATE_LOGO_LABEL"
 					description="TPL_JBOOTSTRAP_TEMPLATE_LOGO_DESC" />
-					
+
 				<field name="sitetitle"  type="text" default=""
 					label="JGLOBAL_TITLE"
 					description="JFIELD_ALT_PAGE_TITLE_LABEL"

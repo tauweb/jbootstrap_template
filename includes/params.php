@@ -16,7 +16,10 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-  
+
+// File contains unsets template variables
+require_once ('unset.php');
+
 // Output as HTML5
 $doc->setHtml5(true);
 
@@ -30,47 +33,24 @@ else
 }
 
 // Add JavaScript Frameworks
-JHtml::_('bootstrap.framework');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/collapse.js');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/util.js');
+// JHtml::_('bootstrap.framework');
 
 // Добавление библиотек
+// JHtml::_('behavior.modal'); // Модальные окна
+// JHtml::_('behavior.tooltip'); // Тултипы
 
-JHtml::_('behavior.modal'); // Модальные окна
-
-JHtml::_('behavior.tooltip'); // Тултипы
+// Add Js
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/jquery.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/collapse.js');
+// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/umd/util.js');
 
 // Установка контент-генератора
 $this->setGenerator('Каждый раз когда вы заходите на сайт, тысячи миньонов пишут весь код своими маленькими ручками.');
 
-// Browser =========================================================================================
-// Определяем браузер и выводим сообщения вслучае говна
-$browser = JBrowser::getInstance();
-
-$browserName = $browser->getBrowser();
-$browserIsRobot = $browser->isRobot();
-$browserIsMobile = $browser->isMobile();
-
-if ($browserName !== 'chrome' and $browserName !== 'mozilla' and !$browserIsRobot and !$browserIsMobile){
-  $browserMessage = "<strong>Ваш браузер $browserName</strong>. 
-    Для корректного серфинга сети рекомендуем установить один из современных браузеров 
-    <a target='_blank' href='https://www.google.com/chrome/browser/index.html'>Chrome</a> или 
-    <a target='_blank' href='https://www.mozilla.org/ru/firefox'>Firefox</a>.";
-
-  $app->enqueueMessage("$browserMessage", 'Notice');
-}
-// End Browser =====================================================================================
-
-// Добавление JS
-// Подсветка синтаксиса
-// На данны момент переопределен в конце head
-// $doc->addScript(JUri::root(true).'/media/system/js/highlighter.js');
-
 // Add Stylesheets
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/wm.css');
-
 
 // Check for a custom CSS file
 $userCss = JPATH_SITE . '/templates/' . $this->template . '/css/user.css';
@@ -80,8 +60,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
   $doc->addStyleSheetVersion('templates/' . $this->template . '/css/user.css');
 }
 
-// File contains unsets template variables
-require_once ('unset.php');
 
 // Load optional RTL Bootstrap CSS
 // JHtml::_('bootstrap.loadCss', true, $this->direction);

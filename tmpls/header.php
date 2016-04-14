@@ -13,7 +13,7 @@
         <?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
       <?php endif; ?>
     </p>
-    <div class="header-search ..lpull-right">
+    <div class="header-search _pull-right">
       <jdoc:include type="modules" name="position-0" style="none" />
     </div>
   </div>

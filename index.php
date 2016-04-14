@@ -23,7 +23,7 @@ include 'includes/variables.php';
 	<?php include 'tmpls/head.php'; ?>
 </head>
 
-<body oncopy="return false" class="site_ <?php echo $option
+<body _oncopy="return false" class="_site <?php echo $option
 	. ' view-' . $view
 	. ($layout ? ' layout-' . $layout : ' no-layout')
 	. ($task ? ' task-' . $task : ' no-task')
@@ -33,22 +33,6 @@ include 'includes/variables.php';
 	<!-- <div class="body"> -->
 
 	<?php include 'tmpls/header.php'; ?>
-
-	<?php // This is old.  ?>
-	<?php if ($this->countModules('_position-1')) : ?>
-		<nav class="navigation" role="navigation">
-			<div class="navbar pull-left">
-				<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-			</div>
-			<div class="nav-collapse">
-				<jdoc:include type="modules" name="position-1" style="none" />
-			</div>
-		</nav>
-	<?php endif; ?>
 
 	<jdoc:include type="modules" name="banner" style="xhtml" />
 
