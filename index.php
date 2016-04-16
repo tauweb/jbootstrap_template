@@ -71,6 +71,21 @@ include 'includes/variables.php';
 
 	<?php  include_once "tmpls/footer.php";?>
 
+
+<script>
+$(document).ready(function(){
+	stickyNav.init(), $(window).scroll(function(){
+		stickyNav.checkPos();
+		var o=$(".navbar");
+		$(window).scrollTop()>0?o.removeClass("homepage"):o.addClass("homepage")
+	}),$("#explainer").on("show.bs.modal",function(){
+			$(this).find(".modal-body").html('<iframe width="728" height="440" src="//www.youtube.com/embed/EtENQieKn_k?rel=0&autoplay=1&html5=1" frameborder="0" allowfullscreen></iframe>')
+		}).on("hide.bs.modal",function(){
+			$(this).find(".modal-body").html('<div class="explainer-filler"></div>')
+	})
+});
+</script>
+
 	<jdoc:include type="modules" name="debug" style="none" />
 </body>
 </html>

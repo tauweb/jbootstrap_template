@@ -9,6 +9,10 @@
   @extend .sr-only;
 }
 
-input[type="text"],input[type="email"],input[type="password"],input[type="search"]{
+input[type="text"],input[type="email"],input[type="password"],input[type="search"],.inputbox, textarea{
   @extend .form-control;
 }
+
+// .input-mini{
+//   @extend .form-control-sm;
+// }

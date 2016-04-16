@@ -102,12 +102,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    @include gradient-x($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
   }
   &.right {
     right: 0;
     left: auto;
-    @include gradient-x($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
   }
 
   // Hover/focus state
@@ -163,16 +163,16 @@
   bottom: 10px;
   left: 50%;
   z-index: 15;
-  width: $carousel-indicators-width;
+  width: 60%;
   padding-left: 0;
-  margin-left: -($carousel-indicators-width / 2);
+  margin-left: -30%;
   text-align: center;
   list-style: none;
 
   li {
     display: inline-block;
-    width: $carousel-indicator-size;
-    height: $carousel-indicator-size;
+    width: 10px;
+    height: 10px;
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
@@ -183,12 +183,11 @@
     // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
     background-color: rgba(0,0,0,0); // IE9
     border: 1px solid $carousel-indicator-border-color;
-    border-radius: $carousel-indicator-size;
+    border-radius: 10px;
   }
-
   .active {
-    width: $carousel-indicator-active-size;
-    height: $carousel-indicator-active-size;
+    width: 12px;
+    height: 12px;
     margin: 0;
     background-color: $carousel-indicator-active-bg;
   }
@@ -201,9 +200,9 @@
 
 .carousel-caption {
   position: absolute;
-  right: ((100% - $carousel-caption-width) / 2);
+  right: 15%;
   bottom: 20px;
-  left: ((100% - $carousel-caption-width) / 2);
+  left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -226,23 +225,23 @@
   .carousel-control {
     .icon-prev,
     .icon-next {
-      width: $carousel-control-sm-up-size;
-      height: $carousel-control-sm-up-size;
-      margin-top: -($carousel-control-sm-up-size / 2);
-      font-size: $carousel-control-sm-up-size;
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      font-size: 30px;
     }
     .icon-prev {
-      margin-left: -($carousel-control-sm-up-size / 2);
+      margin-left: -15px;
     }
     .icon-next {
-      margin-right: -($carousel-control-sm-up-size / 2);
+      margin-right: -15px;
     }
   }
 
   // Show and left align the captions
   .carousel-caption {
-    right: ((100% - $carousel-caption-sm-up-width) / 2);
-    left: ((100% - $carousel-caption-sm-up-width) / 2);
+    right: 20%;
+    left: 20%;
     padding-bottom: 30px;
   }
 

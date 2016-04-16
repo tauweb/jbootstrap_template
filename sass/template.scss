@@ -3,16 +3,24 @@
 @import "icomoon.css";
 @import "extends.scss";
 
+// Styles ======================================================================
+@import "styless.scss";
+@import "classes.scss";
+@import "global.scss";
+@import "bs-develp.scss";
+
 // Template includes ===========================================================
+// Variables
+@import "variables.scss";
+
 // Template parts
 @import "tmpls/header.scss";
 @import "tmpls/top-columns.scss";
 @import "tmpls/footer.scss";
 
-// Styles ======================================================================
-@import "styless.scss";
-@import "classes.scss";
-@import "global.scss";
+// Components
+@import "components/com_content.scss";
+
 
 .breadcrumb li{
   float: left;
@@ -25,9 +33,10 @@
 
 #aside {
   .well{
-    border: 1px dotted #F2F1F0;
+    border: $border;
     >:not(h3){
       margin: 0px 5px;
+      margin-bottom: 10px;
     }
   }
   .page-header{
@@ -35,3 +44,23 @@
     background-color: #F2F1F0;
   }
 }
+
+@media (max-width: 544px) {
+  .navbar ul>li{
+  display: list-item !important;
+  float: none !important;
+  }
+}
+
+.pager .previous > a, .pager .previous > span {
+  float: left;
+}
+
+.muted{
+  color: #999;
+}
+
+.icons-more .btn{
+  @extend .btn-secondary;
+}
+

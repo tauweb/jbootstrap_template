@@ -1,0 +1,50 @@
+// Contact form ====================================================================================
+#slide-contact{
+  dd{
+    border-bottom: $border;
+  }
+  dl{
+    margin: 0 10px;
+  }
+  dt{
+    float: left;
+    margin-right:10px;
+  }
+}
+.accordion-group{
+    margin-bottom: 2px;
+    border: $border;
+    border-radius: 4px;
+}
+.accordion-heading .accordion-toggle {
+    display: block;
+    padding: 8px 15px;
+}
+.accordion-inner {
+    padding: 9px 15px;
+    border-top: $border;
+}
+
+// Futured Contacts ================================================================================
+.blog-featured table.category{
+  thead{
+    @extend .thead-inverse;
+  }
+    @extend .table, .table-bordered, .table-hover;
+  table, tr,th, td{
+    padding:3px;
+  }
+    border-spacing: 0;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .blog-featured table.category{
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .blog-featured table.category{
+    font-size: 0.8rem;
+  }
+}

@@ -13,6 +13,7 @@ header .navbar{
   background-color: #7C3D55;
   background-image: url("../img/pageheader_bg.jpg");
   background-attachment: fixed;
+  background-position: center -300px;
 }
 
 .pageheader-inner{
@@ -21,7 +22,7 @@ header .navbar{
   background-color: rgba(#000, .5);
 }
 
-// Search ======================================================================
+// Search ==========================================================================================
 #mod-search-searchword{
   border-radius: 0px;
   background-color: rgba(#000, .5);

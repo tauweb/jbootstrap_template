@@ -32,9 +32,6 @@ else
   $fullWidth = 0;
 }
 
-// Add JavaScript Frameworks
-// JHtml::_('bootstrap.framework');
-
 // Добавление библиотек
 // JHtml::_('behavior.modal'); // Модальные окна
 // JHtml::_('behavior.tooltip'); // Тултипы
